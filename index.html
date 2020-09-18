@@ -1,173 +1,778 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;}
+.logo img{
+    width: 125px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+nav{
+    flex: 1;
+    text-align:right;
+    position: sticky;
+}   
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+
+    
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+nav ul li img{
+    height:25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 4px 4px;
+    
+    border-radius: 20px;
+    transition:0.5s;
+
+}
+p{
+    color: black;
+
+}
+
+.container{
+    max-width: 1300px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    padding-left: 28px;
+    flex-basis: 50% ;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 15px ;
+}
+.btn{
+    display: inline-block;
+    background-color: rgb(236, 111, 111);
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 15px;
+    margin: 8px 0px;
+    border-radius: 30px;
+    transition:0.5s;
+}
+.btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px 15px;
+    margin: 8px 0px;
+    border-radius: 30px;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6)
+}
+.header .row{
+    margin:50px;
+}
+
+
+
+/* CATAGORIES */
+
+
+.catagories{
+    margin: 70px 0px;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0px 20px;
+
+}
+
+
+
+.col-4{
+    flex-basis: 20%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    cursor: pointer;
+
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    position: relative;
+    margin: 40px;
+    /* margin-top: 20px; */
+    color: rgb(93, 100, 107);
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa{
+    color: tomato;
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+
+.offer{
+    background: radial-gradient(rgb(177 177 177),#000000);
+    margin: auto;
+    padding: 83px;
+    opacity: .9;
+    
+    
+}
+
+.button1{
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 15px;
+    margin: 8px 0px;
+    border-radius: 30px;
+    transition:0.5s;
+}
+.button1:hover{
+    background-color: rgb(212, 85, 39);
+    color: rgb(0, 0, 0);
+    padding: 5px 15px;
+    margin: 8px 0px;
+    border-radius: 30px;
+}
+
+.ex1{
+    flex-basis: 50%;
+    height: 250px;
+}
+.ex1 img{
+    margin-bottom: 20px;
+    width: 300px;
+    height: 100%;
+}
+
+
+/* testimonial */
+
+
+
+
+.testimonial{
+    padding: top 100px;
+}
+
+.testimonial .col-3{
+     text-align: center;
+     padding: 20px 20px;
+     margin-top: 60px;
+     margin-bottom: 60px;
+     
+     box-shadow: 0 0 20px 0px black ;
+     cursor: pointer;
+     transition: transform 0.5s;
+
+}
+.testimonial img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.col-3 p{
+    font-size: 12px;
+}
+
+
+
+/* brands */
+
+.brands{
+    margin: auto;
+    background-color: rgb(238, 238, 238);
+}
+
+.col-5{
+    margin: 125px 0px;
+    padding: 10px 10px;
+    }
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+/* FOOTER */
+
+
+.footer{
+    background-color: black;
+    font-size: 14px;
+    padding: 60px 0x 20px;
+    color: brown
+
+}
+.footer h3{
+    color: brown;
+    margin-bottom: 10px;
+}
+.footer p{
+    color: brown
+    
+}
+.footer-col1,.footer-col2,.footer-col3,.footer-col4{
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+.footer-col1{
+    margin: 20px;
+    flex-basis: 30%;
+    
+
+}
+.footer-col2{
+    flex: 1;
+    text-align: left;
+}
+.footer-col2 img{
+    width: 180px;
+    margin: 20px;
+}
+.footer-col3,.footer-col4{
+    flex-basis: 12%;
+    text-align: center;
+    
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    cursor: pointer;
+    width: 140px;
+}
+
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+
+}
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top:70px;
+        left:0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 1.0;
+    }
+    nav ul li{
+        display :block;
+        margin-right: 50px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        
+    }
+    nav ul li a{
+        color: #fff;
+
+    }
+    .menu-icon{
+        display: inline-block;
+        cursor: pointer;
+
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+        }
+    
+    .col-3,.col-4,.col-2{
+        flex-basis: 100%;
+    }
+    
+    
+    
+    
+    }
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Tushar Khatri</title>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#"><h1><span>T</span>ushar <span>K</span>hatri</h1></a>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">ACCOUNT</a></li>
+                        
+                    </ul>
+                    <img src="images/cart.png"width=30px height="30px">
+                    <img src="images/menu.png"class="menu-icon"onclick="menutoggle()">
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give your workout<br> a new style!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nulla maxime <br> adipisci culpa. Illum, praesentium!
+                    </p>
+                    <a href="#" class="btn">Explore Now</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/image1.png" alt="">
+                </div>
+            </div>
         </div>
-        <div class="nav-list">
-          <div class="hamburger"><div class="bar"></div></div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-   
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- End Header -->
 
-
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Tushar Khatri <span></span></h1>
-        
-      </div>
+    <!-- featured categories -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3"><img src="images/category-1.jpg" alt=""></div>
+                <div class="col-3"><img src="images/category-2.jpg" alt=""></div>
+                <div class="col-3"><img src="images/category-3.jpg" alt=""></div>
+            </div>
+        </div>
     </div>
-  </section>
+
+    <!-- featured products-->
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg">
+                <h4>Hrx Red Tshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$45.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg">
+                <h4>Hrx Black Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
 
 
+                </div>
+                <p>$40.00</p>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Realtime Chat Web Application using NodsJs</h1>
-            <h2> </h2>
-            <p>Developed and deployed a complete real time chat web application using HTMl, CSS and JavaScript on the front end, with NodeJS and Socket.io web socket library on the back end. Socket.io is used to establish a two way connection between the client side and the server side without any lag and delay, this is done to ensure fast communication between different users. In this web application even multiple users can join and can send messeges to each other without any delay or lag.
-            </p>
-            
-            <p><a href="https://multi-user-chat-app.herokuapp.com/">Click here and Redirect to the project website.</a>
-              </p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4>Grey jeans</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>$32.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4>Puma Blue Tshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>$30.00</p>
+
+            </div>
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Movie Search website using ReactJs</h1>
-            <h2> </h2>
-            <p>Developed and deployed a movie seach app using react framework which allows user to search any movie of choice. It does so by sending an api request to a website and recieving the information and the list of  movies relevant to the movie which the user searched.</p>
-            <p><a href="https://tusharkhatri20.github.io/movie-search-app/">Click here and Redirect to the project website.</a>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg">
+                <h4>Hrx Baketball Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$90.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg">
+                <h4>Puma Black Tshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+
+                </div>
+                <p>$40.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg">
+                <h4>Hrx socks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>$12.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg">
+                <h4>Fossil watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>$130.00</p>
+
+            </div>
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>E-commerce webpage</h1>
-            <h2> </h2>
-            <p>Developed and deployed a fully functional and responsive E-commerce Webpage using html,CSS and a bit of JavaScript where the users see and scroll through various products and services offered by the platform and interact with it.</p>
-            <p><a href="https://tusharkhatri20.github.io/e-commerce-webpage/">Click here and Redirect to the project website.</a>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg">
+                <h4>Black Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$90.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4>Hrx Running Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+
+                </div>
+                <p>$80.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg">
+                <h4>Hrx Formal Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>$65.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg">
+                <h4>Nike Trackpant</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>$50.00</p>
+
+            </div>
         </div>
-       
-         
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- End Projects Section -->
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/img-2.jpg" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2></h2>
-        <p>An upcoming Engineer wanted to become a Web Developer.<br> Persuing my Engineering in Electrical And Electronics from Sir M. Visvesvaraya Institute Of Technology, Bangalore. 
-        </p>
-        <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div><h1 class="section-title">Contact <span>info</span></h1></div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+917892439467</h2>
-            <h2>+918549853324</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>tusharkhatri20@gmail.com</h2>
-            <h2>mail.tusharkhatri@gmail.com</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>20,Pachunkar Colony,Dewas,(M.P)</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand"><h1><span>T</span>ushar <span>K</span>hatri</h1></div>
-      
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://github.com/tusharkhatri20"target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/github.png"/></a>
+
+    <!-- OFFERRR -->
+
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="ex1">
+                    <img src="images/exclusive.png">
+                </div>
+                <div class="ex1">
+                    <p>Exclusively Available On Our Website</p>
+                    <h1>mi Smart Band 4</h1>
+                    <small>Mi Smart Band 4- India's No.1 Fitness Band, Up-to 20 Days Battery Life,
+                        Color AMOLED Full-Touch Screen, Waterproof with Music Control and
+                        Unlimited Watch Faces</small>
+                    <div>
+                        <a href="#" class="button1">Buy Now</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/_tushark/"target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.linkedin.com/in/tusharkhatri20/"target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"/></a>
-        </div>
-        
-      </div>
-      <p>Copyright © 2020 Tushar. All rights reserved</p>
     </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
+
+
+    <!-- testimonial -->
+
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi enim voluptatem magni non nam sequi velit explicabo quas ut. Et, natus illum! Dolorem vero autem aliquid minus neque quisquam, quos adipisci nesciunt?"</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-1.png" alt="">
+                    <h3>Tushar Khatri</h3>
+                </div>
+                <div class="col-3">
+                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi enim voluptatem magni non nam sequi velit explicabo quas ut. Et, natus illum! Dolorem vero autem aliquid minus neque quisquam, quos adipisci nesciunt?"</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-2.png" alt="">
+                    <h3>Tushar Khatri</h3>
+                </div>
+                <div class="col-3">
+                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi enim voluptatem magni non nam sequi velit explicabo quas ut. Et, natus illum! Dolorem vero autem aliquid minus neque quisquam, quos adipisci nesciunt?"</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-3.png" alt="">
+                    <h3>Tushar Khatri</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- BRANDS -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png" alt="">
+                </div>
+
+                <div class="col-5">
+                    <img src="images/logo-oppo.png" alt="">
+                </div>
+
+                <div class="col-5">
+                    <img src="images/logo-paypal.png" alt="">
+                </div>
+
+                <div class="col-5">
+                    <img src="images/logo-philips.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download Our App</h3>
+                    <p>Download our app on ios and android</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+
+                    </div>
+                
+                <div class="footer-col2">
+                   
+                    <img src="images/logo-white.png" alt="">
+                </div>
+                </div>
+                <div class="footercol-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a></a></li>
+                        <li><a></a>Blog Post</li>
+                        <li><a></a>Return Policy</li>
+                        <li><a></a>Job openings</li>
+                        
+                    </ul>
+                </div>
+                <div class="footercol-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"></a>Instagram</li>
+                        <li><a></a>Facebook</li>
+                        <li><a></a>Twitter</li>
+                        <li><a></a>Youtube</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script>
+    var MenuItems=document.getElementById("MenuItems")
+    MenuItems.style.maxHeight="0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight =="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+
+
+
+
+
 </body>
+
 </html>
